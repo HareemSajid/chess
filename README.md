@@ -29,3 +29,7 @@ It features a functional chessboard with piece textures, player turns, piece sel
 -> How to Build and Run
 
 1. Ensure SFML is installed and linked correctly.  
+
+---
+Author
+Hareem Sajid
