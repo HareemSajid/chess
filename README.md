@@ -1,31 +1,40 @@
--> Chess Game in C++ with SFML
+# Chess Game (C++ & SFML)
 
-This project is a basic chess game built using C++ and SFML (Simple and Fast Multimedia Library).  
-It features a functional chessboard with piece textures, player turns, piece selection via mouse clicks, and basic move validation.  
+A basic chess game built in **C++** using **SFML** (Simple and Fast Multimedia Library).
 
----
+* Provides an 8×8 chessboard with alternating light and dark squares.
+* Full initial setup of pieces for both players.
+* Mouse-driven piece selection and movement.
+* Turn-based play: White and Black alternate turns.
+* Basic move validation for: Pawn, Rook, Knight, Bishop, Queen, King.
+* King capture detection ends the game and announces the winner.
+* Start (cover) screen and end screen.
+* Demonstrates OOP: inheritance, polymorphism, aggregation, and association.
 
--> Features
+## Features
 
-- 8x8 chessboard with alternating light and dark squares  
-- Full initial setup of all chess pieces  
-- Mouse-based piece selection and movement  
-- Turn-based play: white and black alternate turns  
-- Basic move validation for all pieces (pawn, rook, knight, bishop, queen, king)  
-- King capture detection to end the game  
-- Checkmate logic
-- Cover page (start screen)  
-- Use of inheritance and polymorphism (Pieces class inherits from Chess, with virtual methods)  
+* *8x8 board with alternating light/dark squares*
+* *Initial piece setup for both sides*
+* *Mouse-based piece selection and move*
+* *Turn-based gameplay*
+* *Basic move validation per piece*
+* *King-capture detection for game end*
+* *Start screen and winner announcement*
+* *Polymorphism via virtual `isValidMove` in `Piece` class*
+* *Aggregation of textures (optionally) in `Chess` class*
 
----
+## Prerequisites
 
--> Prerequisites
+* *C++17 or later compiler* (g++, clang, MSVC)
+* *SFML 2.5+* installed and configured (Graphics, Window, System)
 
-- C++ compiler  
-- [SFML library] 
+## Build & Run (Linux / macOS example)
 
----
-
--> How to Build and Run
-
-1. Ensure SFML is installed and linked correctly.  
+1. Install SFML (platform-specific).
+2. From project root:
+```bash
+mkdir build
+cd build
+cmake ..
+make
+./ChessSFML
